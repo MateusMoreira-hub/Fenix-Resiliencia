@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renascendo 🐦‍🔥</title>
+    <link rel="stylesheet" href="/CSS/renascendo.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+     <img src="/IMAGE/Fenix.png" alt="Fênix" class="fenix">
+
+     <script>
+       segundos = 3; 
+
+function atualizarContagem() {
+  if (segundos > 0) {
+    segundos--;
+    setTimeout(atualizarContagem, 1000); 
+  } else {
+    window.location.href = "/HTML/burnwords.html";
+  }
+}
+
+atualizarContagem();
+
+     </script>
+</body>
+</html>

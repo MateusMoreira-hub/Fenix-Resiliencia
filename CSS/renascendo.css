@@ -1,0 +1,63 @@
+
+
+        .fenix {
+    height: 150px;
+    width: 150px;
+    animation: efeitoFenix 2s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 234, 0, 0.8));
+     margin-right: -100;
+            margin-top: 25%;
+            transform: rotate(45deg);
+            animation: voando 5s linear infinite;
+}
+
+        @keyframes voando {
+    0% {
+        margin-right: 100%; margin-top: 25%; width: 180px; filter: drop-shadow(0 0 10px rgba(255, 234, 0, 0.8));
+    }
+    50% {
+        margin-right: -75%; margin-top: -35%; width: 80px; filter: drop-shadow(0 0 10px rgba(198, 52, 36, 0.8));
+    }
+    100%{
+        margin-right: -80%; margin-top: -50%; width: 180px; filter: drop-shadow(0 0 10px rgba(255, 136, 0, 0.8)); opacity: 0%;
+    }
+}
+
+body {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+ min-height: 100vh;
+    background: rgb(44, 1, 0);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Oswald', sans-serif;
+    color: white;
+
+     animation: renascimento 5s ease-in-out;
+}
+
+
+@keyframes renascimento {
+0%{
+background: rgb(44, 1, 0);
+}
+
+    50% {
+background: rgb(255, 170, 0);
+    }
+
+    100% {
+        background: rgb(44, 1, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    
+.fenix{
+    animation: voando 4s linear infinite;
+}
+
+
+}
